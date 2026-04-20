@@ -22,6 +22,20 @@ A visual workflow builder for HR processes (onboarding, approvals, automation).
 - Mock API integration
 - Workflow simulation panel
 
+## 🧾 Submission Notes
+
+### 🔧 Tricky Bug Solved
+One challenging bug I faced was React Flow node state desynchronization with global state.
+
+**Issue:**  
+Updating node data via local state didn’t reflect in Redux.
+
+**Fix:**  
+I centralized updates via Redux actions and ensured React Flow state sync using controlled nodes and edges.
+
+**Result:**  
+Improved consistency and eliminated UI mismatch issues.
+
 ##  How to Run
 
 ```bash
