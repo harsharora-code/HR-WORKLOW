@@ -6,7 +6,7 @@ A visual workflow builder for HR processes (onboarding, approvals, automation).
 
 ## Screenshot
 ### Workflow Canvas
-![Canvas](./screenshots/simulation.png)
+![Simulation](./screenshots/simulation.png)
 
 # Architecture
 - React + TypeScript
