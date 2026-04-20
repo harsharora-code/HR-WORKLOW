@@ -22,5 +22,6 @@ A visual workflow builder for HR processes (onboarding, approvals, automation).
 ```bash
 npm install
 npm run dev
-
-<img width="1914" height="1021" alt="image" src="https://github.com/user-attachments/assets/f746cccd-0d87-4a40-ad31-b49cdd06eb88" />
+<p align="center">
+  <img src="./screenshots/simulation.png" width="700"/>
+</p>
