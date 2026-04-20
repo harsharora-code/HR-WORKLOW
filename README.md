@@ -1,11 +1,12 @@
-<p align="center">
-  <img src="./screenshots/simulation.png" width="700"/>
-</p>
 
 # HR Workflow Designer (React Flow)
 
 ##  Overview
 A visual workflow builder for HR processes (onboarding, approvals, automation).
+
+## Screenshot
+### Workflow Canvas
+![Canvas](./screenshots/simulation.png)
 
 # Architecture
 - React + TypeScript
