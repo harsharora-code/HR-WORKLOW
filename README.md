@@ -27,4 +27,3 @@ A visual workflow builder for HR processes (onboarding, approvals, automation).
 ```bash
 npm install
 npm run dev
-
