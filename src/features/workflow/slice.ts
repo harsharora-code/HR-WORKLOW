@@ -155,6 +155,12 @@ const initialNodes: WorkflowNode[] = [
       nodeKind: "Automation",
       owner: "HRIS",
       trend: "Message",
+      actionId: "send_email",
+      params: {
+        to: "new.hire@company.com",
+        subject: "Welcome to the team",
+        body: "Your onboarding packet is ready. Please review the attached day-one checklist before joining.",
+      },
       progress: 96,
       issues: 1,
       completion: "96% done",

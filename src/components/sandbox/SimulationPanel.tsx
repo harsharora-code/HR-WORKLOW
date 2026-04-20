@@ -20,7 +20,12 @@ export default function SimulationPanel() {
       </button>
       <div className="simulation-results">
         {result.map((r, i) => (
-          <div key={i}>{r}</div>
+          <div
+            key={i}
+            className={r.includes("not sent") || r.includes("missing") ? "result-error" : "result-ok"}
+          >
+            {r}
+          </div>
         ))}
       </div>
     </div>

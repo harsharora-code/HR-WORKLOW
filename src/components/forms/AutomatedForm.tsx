@@ -32,6 +32,7 @@ export default function AutomatedForm({ node }: AutomatedFormProps) {
         data: {
           ...node.data,
           [field]: value,
+          ...(field === "actionId" ? { params: {} } : {}),
         },
       })
     );
@@ -89,15 +90,24 @@ export default function AutomatedForm({ node }: AutomatedFormProps) {
         <div className="form-panel-nested">
           <h3>Parameters</h3>
           {selectedAction.params.map((param: string) => (
-            <input
-              key={param}
-              placeholder={param}
-              className="field"
-              value={node.data.params?.[param] || ""}
-              onChange={(e) =>
-                updateParam(param, e.target.value)
-              }
-            />
+            <label key={param}>
+              {param}
+              {param === "body" ? (
+                <textarea
+                  placeholder={param}
+                  className="field field-textarea"
+                  value={node.data.params?.[param] || ""}
+                  onChange={(e) => updateParam(param, e.target.value)}
+                />
+              ) : (
+                <input
+                  placeholder={param}
+                  className="field"
+                  value={node.data.params?.[param] || ""}
+                  onChange={(e) => updateParam(param, e.target.value)}
+                />
+              )}
+            </label>
           ))}
         </div>
       )}
